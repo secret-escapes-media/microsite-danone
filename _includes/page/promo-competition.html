@@ -1,0 +1,11 @@
+{% assign competition-page = site.html_pages | where: 'id', 'competition' | first %}
+<div class="bg--dark bg--img vpad--xxxxl" style="background-image: url('{{site.img}}/content/{{competition-page.id}}/bg.jpg')">
+  <div class="container">
+    <div class="width width--xl text--white text--center">
+      <h2 class="title title--xxl">Win one of eight deliciously secret getaways</h2>
+      <p class="text--xxl text--normal">Buy a pack of Danone Light & Free to be in with a chance of winning one of eight unmissable getaways, inspired by the eight irresistible flavours of Light & Free. From far-flung to simply fantastic, we’re sending eight lucky winners to experience a secret escape like no other. What’s more, we have plenty of deliciously daring runners-up prizes up for grabs too. Head to our entry page now to find out more!</p>
+      <div class="space--md"></div>
+      <a href="{{site.baseurl}}{{competition-page.url}}" class="btn btn--orange">Enter Now</a>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,107 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.col__content-spacing {
+  > * + * {
+    margin-top: $s2;
+    @include bp($lg) { margin-top: $s4; }
+  }
+}
+
+.flavour {
+  &--blueberry &__title { color: $lf-blueberry-text; }
+  &--blueberry {
+    background-color: lighten($lf-blueberry, 48);
+    border: 2px solid $lf-blueberry;
+  }
+  &--vanilla &__title { color: $lf-vanilla-text; }
+  &--vanilla {
+    background-color: lighten($lf-vanilla, 20);
+    border: 2px solid $lf-vanilla;
+  }
+  &--peach &__title { color: $lf-peach-text; }
+  &--peach {
+    background-color: lighten($lf-peach, 44);
+    border: 2px solid $lf-peach;
+  }
+  &--lemon &__title { color: $lf-lemon-text; }
+  &--lemon {
+    background-color: lighten($lf-lemon, 47);
+    border: 2px solid $lf-lemon;
+  }
+  &--cherry &__title { color: $lf-cherry-text; }
+  &--cherry {
+    background-color: lighten($lf-cherry, 48);
+    border: 2px solid $lf-cherry;
+  }
+  &--strawberry &__title { color: $lf-strawberry-text; }
+  &--strawberry {
+    background-color: lighten($lf-strawberry, 47);
+    border: 2px solid $lf-strawberry;
+  }
+  &--coconut &__title { color: $lf-coconut-text; }
+  &--coconut {
+    background-color: lighten($lf-coconut, 43);
+    border: 2px solid $lf-coconut;
+  }
+  &--raspberry &__title { color: $lf-raspberry-text; }
+  &--raspberry {
+    background-color: lighten($lf-raspberry, 40);
+    border: 2px solid $lf-raspberry;
+  }
+}
+
+.bg {
+  &--about {
+    background-color: $grey-darkest;
+    background-position: top center;
+  }
+}
+
+.width {
+  &--lf-logo { max-width: 200px; }
+}
+
+.vpad {
+  &--about {
+    padding-top: $s12;
+    padding-bottom: $s12;
+    @include bp($lg) {
+      padding-top: 50vh;
+      padding-bottom: 20vh;
+    }
+  }
+}
+
+
+.prize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  &__description {
+    margin-left: $s2;
+    font-size: $s2;
+    font-weight: 600;
+    width: 250px;
+  }
+  &__number{
+    flex-shrink: 0;
+    $size: 125px;
+    height: $size;
+    width: $size;
+    font-size: $s9;
+    line-height: $size;
+    text-align: center;
+    font-family: $font-title-01;
+    @include background-attributes;
+    &--8-0 { background-image: url('../img/content/competition/pie/pie-8-0.svg'); }
+    &--8-1 { background-image: url('../img/content/competition/pie/pie-8-1.svg'); }
+    &--8-2 { background-image: url('../img/content/competition/pie/pie-8-2.svg'); }
+    &--8-3 { background-image: url('../img/content/competition/pie/pie-8-3.svg'); }
+    &--8-4 { background-image: url('../img/content/competition/pie/pie-8-4.svg'); }
+    &--8-5 { background-image: url('../img/content/competition/pie/pie-8-5.svg'); }
+    &--8-6 { background-image: url('../img/content/competition/pie/pie-8-6.svg'); }
+    &--8-7 { background-image: url('../img/content/competition/pie/pie-8-7.svg'); }
+    &--8-8 { background-image: url('../img/content/competition/pie/pie-8-8.svg'); }
+  }
+}

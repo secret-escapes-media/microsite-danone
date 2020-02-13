@@ -2,7 +2,6 @@
 
 .bg-img {
   // Vertically centered content in bg-image
-  background-color: $grey-dark;
   @include transition;
   &__link {
     position: absolute;
@@ -34,8 +33,8 @@
     right: 0;
     bottom: 0;
     z-index: $z-content;
-    background-color: rgba($black,.4);
+    background-color: rgba($black,0);
     @include transition;
   }
-  &:hover &__bg-overlay { background-color: rgba($black,.6); }
+  &:hover &__bg-overlay { background-color: rgba($black,.33); }
 }

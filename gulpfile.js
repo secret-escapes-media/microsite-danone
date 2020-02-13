@@ -22,7 +22,7 @@ function cleanAssets() {
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
-  const baseurl = '/uk/2020/template';
+  const baseurl = '/uk/2020/lightandfree';
   browserSync.init({
     baseDir: '_site/',
     ui: false,
@@ -68,6 +68,12 @@ function buildSass() {
 function buildImages() {
   return gulp.src('./_assets/img/**/*.*')
   .pipe(gulp.dest('./_site/_assets/img/'));
+}
+
+// build for image files
+function buildFonts() {
+  return gulp.src('./_assets/font/**/*.*')
+  .pipe(gulp.dest('./_site/_assets/font/'));
 }
 
 // build for main js file
@@ -211,6 +217,7 @@ var build = gulp.series(
     buildJekyll,
     buildSass,
     buildImages,
+    buildFonts,
     buildJsMain,
     buildJs
   )

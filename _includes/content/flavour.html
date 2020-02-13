@@ -1,0 +1,11 @@
+{% assign flavour = page.flavours | where: 'id', include.id | first %}
+<div class="width width--md flavour flavour--{{include.id}}">
+  <a href="{{flavour.link}}">
+    <img src="{{site.img}}/content/{{page.id}}/packs/{{include.id}}.png" alt="Pack of {{flavour.title}} flavour Light & Free">
+  </a>
+  <div class="hpad--md text--center">
+    <div class="title title--sm flavour__title"><a href="{{flavour.link}}">{{flavour.title}}</a></div>
+    <p>{{flavour.description}}</p>
+    <div class="space--lg"></div>
+  </div>
+</div>

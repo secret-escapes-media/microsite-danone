@@ -1,6 +1,32 @@
-
 // need to put a friendly reminder where the g fonts snippet needs to go in the whole site
 // additional families need to included in includes > page > head
 
+@font-face {
+  font-family: 'Block Pro';
+  src: local('Block Pro Italic'), local('BlockPro-Italic'),
+      url('../font/BlockPro-Italic.woff2') format('woff2'),
+      url('../font/BlockPro-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Block Pro';
+  src: local('Block Pro Regular'), local('BlockPro-Regular'),
+      url('../font/BlockPro-Regular.woff2') format('woff2'),
+      url('../font/BlockPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Block Pro';
+  src: local('Block Pro Bold'), local('BlockPro-Bold'),
+      url('../font/BlockPro-Bold.woff2') format('woff2'),
+      url('../font/BlockPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 $font-core: 'Open Sans', 'Helvetica Neue', sans-serif;
-$font-title-01: 'Montserrat', 'Helvetica Neue', sans-serif;
+$font-title-01: 'Block Pro', 'Helvetica Neue', sans-serif;

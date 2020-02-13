@@ -1,19 +1,18 @@
 # Site settings
-title: Template
+title: Light & Free Escapes
 client:
-  name: Client Name
-  link: "#client-name"
+  name: Light & Free
+  link: http://www.lightandfree.com/
 core-se-link: https://www.secretescapes.com/current-sales
-# core-se-link: https://www.secretescapes.de/aktuelle-angebote # DE
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Take the leap into the unknown. We’ve partnered with Light & Free to bring you eight deliciously secret getaways. So if you’re ready to live life free, throw yourself into the unexpected, and experience an escape like no other, don’t miss your chance to win the travel experience of a lifetime.
 
 # file paths
-url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2020/template" # the subpath of the site, including territory and year
-img:     "/uk/2020/template/_assets/img"
-css:     "/uk/2020/template/_assets/css"
-js:      "/uk/2020/template/_assets/js"
+url:     "https://mp.secretescapes.com" # the base hostname & protocol for your site
+baseurl: "/uk/2020/lightandfree" # the subpath of the site, including territory and year
+img:     "/uk/2020/lightandfree/_assets/img"
+css:     "/uk/2020/lightandfree/_assets/css"
+js:      "/uk/2020/lightandfree/_assets/js"
 
 
 # Build settings

@@ -2,6 +2,7 @@
 
 .bg {
   &--white { background-color: $white; }
+  &--black { background-color: $black; }
   &--light { background-color: $grey-lightest; }
   &--dark  { background-color: $grey-dark; }
   &--img   { @include background-attributes; }
@@ -14,5 +15,13 @@
     z-index: $z-background;
     @include background-attributes;
     background-color: $grey-darker;
+  }
+  &--gradient-white {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.66) 50%, rgba(255,255,255,0) 100%);
+  }
+  &--blue { background-color: $dark-blue; }
+  &--gradient-blue {
+    background: rgba($dark-blue, .85);
+    background: linear-gradient(0deg, rgba($dark-blue,1) 0%, rgba($dark-blue,0.66) 50%, rgba($dark-blue,0) 100%);
   }
 }

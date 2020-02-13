@@ -23,8 +23,8 @@
 - id: video
   type: youtube
   pages:
-    - id: all
-  youtube-id: Os6R4G4dimY
+    - id: overview
+  youtube-id: "#"
 
 - id: another
   pages:
