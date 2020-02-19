@@ -6,6 +6,9 @@ title: Flavours
 nav: true
 nav-order: 3
 
+banner:
+  title: Discover <br>the Flavours
+
 intro: With eight flavours to choose from, discover your favourite today. Take a delicious journey around the world, with no added sugar and 0% fat, so you can live a life that’s light and free.
 
 flavours:
@@ -52,7 +55,7 @@ flavours:
 ---
 
 <div class="container">
-  <div class="vpad--xxxl">
+  <div class="vpad--xxl">
     <div class="row row--6-6 row--xxl-4-4-4">
       <div class="col">
         <div class="col__content-spacing">

@@ -1,6 +1,7 @@
 var modal          = $('.js-modal'),
     modalLaunchBtn = $('.js-open-modal'),
     modalCloseBtn  = $('.js-close-modal');
+var bannerVideo    = document.getElementById('overview-bg-video');
 
 // opens modal
 function modalOpen(event, modalId){
@@ -23,6 +24,8 @@ function modalOpen(event, modalId){
 
   // builds youtube video if needed
   if (activeModal.data('youtube-id')) {
+    // pause background video from playing as well
+    if (bannerVideo) bannerVideo.pause();
     // get youtube id and target div
     var video     = activeModal.find('.js-modal-video'),
         youtubeId = activeModal.data('youtube-id');
@@ -51,6 +54,8 @@ function modalClose(event){
     $('.modal.is-open').removeClass('is-open').addClass('is-closed');
     // kill everything inside of video if its there
     $('.js-modal-video').empty();
+    // play background video if its on the page
+    if (bannerVideo) bannerVideo.play();
   });
 }
 

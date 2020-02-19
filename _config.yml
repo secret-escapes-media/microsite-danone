@@ -13,6 +13,7 @@ baseurl: "/uk/2020/lightandfree" # the subpath of the site, including territory 
 img:     "/uk/2020/lightandfree/_assets/img"
 css:     "/uk/2020/lightandfree/_assets/css"
 js:      "/uk/2020/lightandfree/_assets/js"
+video:   "/uk/2020/lightandfree/_assets/video"
 
 
 # Build settings

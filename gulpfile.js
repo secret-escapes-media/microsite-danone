@@ -70,10 +70,16 @@ function buildImages() {
   .pipe(gulp.dest('./_site/_assets/img/'));
 }
 
-// build for image files
+// build for font files
 function buildFonts() {
   return gulp.src('./_assets/font/**/*.*')
   .pipe(gulp.dest('./_site/_assets/font/'));
+}
+
+// build for video files
+function buildVideos() {
+  return gulp.src('./_assets/video/**/*.*')
+  .pipe(gulp.dest('./_site/_assets/video/'));
 }
 
 // build for main js file
@@ -218,6 +224,7 @@ var build = gulp.series(
     buildSass,
     buildImages,
     buildFonts,
+    buildVideos,
     buildJsMain,
     buildJs
   )

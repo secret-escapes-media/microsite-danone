@@ -49,7 +49,9 @@ layout: default
       <div class="row row--lg-6-6 row--xxl-4-4-4 row--gutters-lg">
         {% for prize in page.prizes %}
           <div class="col">
-              <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg')"></div>
+              <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/prize/{{prize.id}}.jpg')">
+                <div class="bg-img__fruit" style="background-image: url('{{site.img}}/content/{{page.id}}/fruit/{{prize.id}}.png')"></div>
+              </div>
               <div class="vpad--md hpad--sm text--normal">
                 <h3 class="title title--sm">{{prize.title}}</h3>
                 {% for item in prize.description %}
@@ -71,13 +73,13 @@ layout: default
       <p class="text--xxxl">If you win one of our £250 vouchers, here’s what you could book...</p>
     </div>
   </div>
-  {% include offer/all-offers.html%}
+  {% include offer/preview-offers.html%}
   <div class="text--center">
     <a href="{{site.baseurl}}/offers" class="btn btn--orange">See more offers</a>
   </div>
 </div>
 
-<div class="bg--blue vpad--xxxl">
+<div class="bg--blue bg--img vpad--xxxl" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg'); background-position: top center;">
   <div class="container">
     <div class="width width--lg text--white text--center">
       <h2 class="title title--xxl">{{page.title}}</h2>

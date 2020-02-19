@@ -105,3 +105,119 @@
     &--8-8 { background-image: url('../img/content/competition/pie/pie-8-8.svg'); }
   }
 }
+
+.shops {
+  padding-top: $s0;
+  .shop {
+    display: inline-block;
+    padding: $s0 $s3;
+    margin: $s-4 $s-6;
+    font-size: $s1;
+    font-weight: 600;
+    background-color: $grey-lightest;
+    border-radius: 999rem;
+    @include transition;
+    &:hover { color: $white }
+    &--sainsburys {
+      color: #f06c00;
+      background-color: #feede0;
+      &:hover { background-color: #f06c00; }
+    }
+    &--tesco {
+      color: #00539f;
+      background-color: #e0eaf3;
+      &:hover { background-color: #00539f; }
+    }
+    &--asda {
+      color: #68a51c;
+      background-color: #edf4e3;
+      &:hover { background-color: #68a51c; }
+    }
+    &--morrisons {
+      color: #064e37;
+      background-color: #e0e9e6;
+      &:hover { background-color: #064e37; }
+    }
+    &--coop {
+      color: #00b1e7;
+      background-color: #e6f7fd;
+      &:hover { background-color: #00b1e7; }
+    }
+    &--marks-spencer {
+      color: $black;
+      background-color: #e6e6e6;
+      &:hover { background-color: $black; }
+    }
+    &--waitrose {
+      color: #5c8018;
+      background-color: #eff2e8;
+      &:hover { background-color: #5c8018; }
+    }
+  }
+}
+
+
+.overview-bg {
+  position: relative;
+  overflow: hidden;
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    background-image: url('../img/content/overview/bg.jpg');
+    background-color: #000;
+    @include background-attributes;
+    background-position: top center; // lines up bg image of first frame with the video so there is no jump when video loads
+  }
+  &__content {
+    position: relative;
+    z-index: $z-content-overlay;
+  }
+  &__video {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-content-upper;
+    width: 100%;
+    min-height: 100%;
+    & video {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      display: none;
+      @include bp($lg){ display: block; }
+    }
+    &:before { // needed to replicate background-size: cover behaviour
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    background-color: rgba(26,32,43,.4);
+  }
+}
+
+.bg-img__fruit {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  z-index: $z-content-upper;
+  height: 70px;
+  width: 70px;
+  @include background-attributes;
+  background-size: contain;
+}

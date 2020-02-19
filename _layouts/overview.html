@@ -2,27 +2,35 @@
 layout: default
 ---
 
-<div class="bg--img" style="background-image: url('{{site.img}}/content/overview/bg.jpg');">
-  <div class="site-header__offset"></div>
-  <div class="site-nav__offset"></div>
-  <div class="space--xxxxl"></div>
-  <div class="space--xxl"></div>
-  <div class="container text--center">
-    <div class="width width--xl text--center">
-      <a class="js-open-modal" href="#video-link" data-open-modal="video">
-        <img src="{{site.img}}/content/title.svg" alt="Explore, experience, experiement – Live Free with Secret Escapes and Light & Free ">
-      </a>
-    </div>
+<div class="bg--img overview-bg">
+  <div class="overview-bg__image"></div>
+  <div class="overview-bg__video">
+    <div class="overview-bg__overlay"></div>
+    <video id="overview-bg-video" src="{{site.video}}/overview-bg.mp4" height="100%" playsinline loop muted autoplay></video>
   </div>
-  <div class="bg--gradient-white">
+  <div class="overview-bg__content">
+    <div class="site-header__offset"></div>
+    <div class="site-nav__offset"></div>
     <div class="space--xxxxl"></div>
-    <div class="space--xxxxl"></div>
-    <div class="width width--xl text--center text--xxxl text--normal">
-      <p>{{site.description}}</p>
-    </div>
     <div class="space--xxl"></div>
+    <div class="container text--center">
+      <div class="width width--xl text--center">
+        <a class="js-open-modal" href="#video-link" data-open-modal="video">
+          <img src="{{site.img}}/content/title.svg" alt="Explore, experience, experiement – Live Free with Secret Escapes and Light & Free ">
+        </a>
+      </div>
+    </div>
+    <div class="bg--gradient-white">
+      <div class="space--xxxxl"></div>
+      <div class="space--xxxxl"></div>
+      <div class="width width--xl text--center text--xxxl text--normal">
+        <p>{{site.description}}</p>
+      </div>
+      <div class="space--xxl"></div>
+    </div>
   </div>
-</div>
+  </div>
+
 
 <div class="content-spacing section-spacing">
 

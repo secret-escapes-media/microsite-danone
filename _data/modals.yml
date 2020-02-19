@@ -26,6 +26,19 @@
     - id: overview
   youtube-id: "#"
 
+- id: shops
+  pages:
+    - id: all
+  content: >
+    <div class="content-spacing width width--lg text--center">
+      <p class="title title--xs">Please choose a shop</p>
+      <div class="shops">
+        {% for shop in site.data.shops %}
+          <a id="track-{{page.id}}-shop-modal-{{shop.id}}" class="shop shop--{{shop.id}}" href="{{shop.link}}">{{shop.name}}</a>
+        {% endfor %}
+      </div>
+    </div>
+
 - id: another
   pages:
     - id: all

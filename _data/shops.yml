@@ -1,0 +1,27 @@
+- id: asda
+  name: Asda
+  link: https://www.asda.com/
+
+- id: coop
+  name: Co-op
+  link: https://www.coop.co.uk/
+
+- id: marks-spencer
+  name: Marks & Spencer
+  link: https://www.marksandspencer.com/
+
+- id: morrisons
+  name: Morrisons
+  link: https://groceries.morrisons.com/webshop/startWebshop.do
+
+- id: sainsburys
+  name: Sainsbury's
+  link: https://www.sainsburys.co.uk/
+
+- id: tesco
+  name: Tesco
+  link: https://www.tesco.com/
+
+- id: waitrose
+  name: Waitrose
+  link: https://www.waitrose.com/
