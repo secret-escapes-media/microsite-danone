@@ -1,27 +1,19 @@
+- id: tesco
+  name: Tesco
+  link: https://www.tesco.com/groceries/en-GB/buylists/danone-light-and-free-19tw23/danone
+
+- id: sainsburys
+  name: Sainsbury's
+  link: https://www.sainsburys.co.uk/webapp/wcs/stores/servlet/SearchDisplayView?catalogId=10241&storeId=10151&langId=44&krypto=rIX80ahMBVu9MEzxD2hBXmwpngROyQ3uPnhrMOxKOLJdWymFE8W2S8310Ya7grnjB%2F2JMQWJzGxD%2Bw5UJZF6crw3zrIUDDs8t6%2FeCX5H9BeEC7nlgkYfAKbs0F4gi0NKn4ecDEvOK05G6meKUvp2XRiRW3maNpT05KLjsPF6O67o8JgNyOiiibsCo21rZuj5ZaRLW%2FibImOHFPJs5b9XEg%3D%3D#langId=44&storeId=10151&catalogId=10241&categoryId=&parent_category_rn=&top_category=&pageSize=60&orderBy=RELEVANCE&searchTerm=danone%20light%20%26%20free&beginIndex=0&hideFilters=true&categoryFacetId1=
+
 - id: asda
   name: Asda
-  link: https://www.asda.com/
+  link: https://groceries.asda.com/product/greek-style/light-free-fat-free-greek-style-strawberry-yogurts/910002325420
+
+- id: morrisons
+  name: Morrisons
+  link: https://groceries.morrisons.com/products/light-free-strawberry-yogurt-325137011
 
 - id: coop
   name: Co-op
   link: https://www.coop.co.uk/
-
-- id: marks-spencer
-  name: Marks & Spencer
-  link: https://www.marksandspencer.com/
-
-- id: morrisons
-  name: Morrisons
-  link: https://groceries.morrisons.com/webshop/startWebshop.do
-
-- id: sainsburys
-  name: Sainsbury's
-  link: https://www.sainsburys.co.uk/
-
-- id: tesco
-  name: Tesco
-  link: https://www.tesco.com/
-
-- id: waitrose
-  name: Waitrose
-  link: https://www.waitrose.com/
