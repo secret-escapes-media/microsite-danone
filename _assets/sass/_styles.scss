@@ -8,52 +8,148 @@
 }
 
 .flavour {
+  position: relative;
+  padding-bottom: $s6;
+  &__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  &__image-link {
+    position: relative;
+    z-index: $z-content-upper;
+    display: block;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 90%;
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: $z-content-upper;
+    padding-left: $s0;
+    padding-right: $s0;
+    text-align: center;
+  }
+  &__title {
+    font-family: $font-title-01;
+    font-style: italic;
+    line-height: .9;
+    font-size: $s4;
+  }
+  &__sub {
+    font-family: $font-title-01;
+    line-height: .9;
+    font-size: $s1;
+  }
+  &__link {
+    display: inline-block;
+    padding-top: $s-6;
+    padding-left: $s-3;
+    padding-right: $s-5;
+    padding-bottom: $s-6;
+    margin-top: $s0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $s-1;
+    letter-spacing: .25rem;
+    border-bottom: 1px solid black;
+  }
+  &--blueberry &__image { background-image: url('../img/content/about/cards/blueberry.jpg') }
   &--blueberry &__title { color: $lf-blueberry-text; }
+  &--blueberry &__link {
+    color: $lf-blueberry-text;
+    border-bottom-color: $lf-blueberry-text;
+  }
   &--blueberry {
-    background-color: lighten($lf-blueberry, 48);
-    border: 2px solid $lf-blueberry;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(233,239,255,1) 0%, rgba(243,246,255,1) 100%);
   }
+  &--vanilla &__image { background-image: url('../img/content/about/cards/vanilla.jpg') }
   &--vanilla &__title { color: $lf-vanilla-text; }
+  &--vanilla &__link {
+    color: $lf-vanilla-text;
+    border-bottom-color: $lf-vanilla-text;
+  }
   &--vanilla {
-    background-color: lighten($lf-vanilla, 20);
-    border: 2px solid $lf-vanilla;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(242,235,207,1) 0%, rgba(246,238,215,1) 100%);
   }
+  &--peach &__image { background-image: url('../img/content/about/cards/peach.jpg') }
   &--peach &__title { color: $lf-peach-text; }
+  &--peach &__link {
+    color: $lf-peach-text;
+    border-bottom-color: $lf-peach-text;
+  }
   &--peach {
-    background-color: lighten($lf-peach, 44);
-    border: 2px solid $lf-peach;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(255,233,194,1) 0%, rgba(255,238,210,1) 100%);;
   }
+  &--lemon &__image { background-image: url('../img/content/about/cards/lemon.jpg') }
   &--lemon &__title { color: $lf-lemon-text; }
+  &--lemon &__link {
+    color: $lf-lemon-text;
+    border-bottom-color: $lf-lemon-text;
+  }
   &--lemon {
-    background-color: lighten($lf-lemon, 47);
-    border: 2px solid $lf-lemon;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(255,245,223,1) 0%, rgba(255,245,223,1) 100%);
   }
+  &--cherry &__image { background-image: url('../img/content/about/cards/cherry.jpg') }
   &--cherry &__title { color: $lf-cherry-text; }
+  &--cherry &__link {
+    color: $lf-cherry-text;
+    border-bottom-color: $lf-cherry-text;
+  }
   &--cherry {
-    background-color: lighten($lf-cherry, 48);
-    border: 2px solid $lf-cherry;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(251,221,233,1) 0%, rgba(250,230,239,1) 100%);
   }
+  &--strawberry &__image { background-image: url('../img/content/about/cards/strawberry.jpg') }
   &--strawberry &__title { color: $lf-strawberry-text; }
+  &--strawberry &__link {
+    color: $lf-strawberry-text;
+    border-bottom-color: $lf-strawberry-text;
+  }
   &--strawberry {
-    background-color: lighten($lf-strawberry, 47);
-    border: 2px solid $lf-strawberry;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(253,217,217,1) 0%, rgba(250,224,227,1) 100%);
   }
+  &--coconut &__image { background-image: url('../img/content/about/cards/coconut.jpg') }
   &--coconut &__title { color: $lf-coconut-text; }
-  &--coconut {
-    background-color: lighten($lf-coconut, 43);
-    border: 2px solid $lf-coconut;
+  &--coconut &__link {
+    color: $lf-coconut-text;
+    border-bottom-color: $lf-coconut-text;
   }
+  &--coconut {
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(251,227,203,1) 0%, rgba(250,233,217,1) 100%);
+  }
+  &--raspberry &__image { background-image: url('../img/content/about/cards/raspberry.jpg') }
   &--raspberry &__title { color: $lf-raspberry-text; }
+  &--raspberry &__link {
+    color: $lf-raspberry-text;
+    border-bottom-color: $lf-raspberry-text;
+  }
   &--raspberry {
-    background-color: lighten($lf-raspberry, 40);
-    border: 2px solid $lf-raspberry;
+    background-color: #fcdcdd;
+    background: linear-gradient(90deg, rgba(249,217,241,1) 0%, rgba(249,224,245,1) 100%);
   }
 }
 
 .bg {
-  &--about {
-    background-color: $grey-darkest;
-    background-position: top center;
+  &--cream {
+    background-color: $lf-cream;
+    // background: linear-gradient(45deg, rgba(255,246,217,1) 0%, rgba(255,251,238,1) 100%);
   }
 }
 
@@ -64,11 +160,6 @@
 .vpad {
   &--about {
     padding-top: $s12;
-    padding-bottom: $s12;
-    @include bp($lg) {
-      padding-top: 50vh;
-      padding-bottom: 20vh;
-    }
   }
 }
 
@@ -77,7 +168,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $white;
   &__description {
     margin-left: $s2;
     font-size: $s2;

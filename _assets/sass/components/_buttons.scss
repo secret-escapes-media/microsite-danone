@@ -17,6 +17,12 @@
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
+  &--blue { background-color: $lf-blueberry;
+    &:hover { background-color: darken($lf-blueberry,10); }
+  }
+  &--peach { background-color: $lf-peach;
+    &:hover { background-color: darken($lf-peach,10); }
+  }
   &--outline {
     color: inherit;
     &:before {
@@ -36,6 +42,7 @@
   &--outline-orange {
     &:before { border-color: $orange; }
     &:hover {
+      color: $white;
       background-color: $orange;
       &:before { border-color: $orange; }
     }

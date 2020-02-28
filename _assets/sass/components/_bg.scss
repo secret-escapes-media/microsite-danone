@@ -24,4 +24,8 @@
     background: rgba($dark-blue, .85);
     background: linear-gradient(0deg, rgba($dark-blue,1) 0%, rgba($dark-blue,0.66) 50%, rgba($dark-blue,0) 100%);
   }
+  &--gradient-cream {
+    background: rgba($lf-cream, .85);
+    background: linear-gradient(0deg, rgba($lf-cream,1) 0%, rgba($lf-cream,0.66) 50%, rgba($lf-cream,0) 100%);
+  }
 }

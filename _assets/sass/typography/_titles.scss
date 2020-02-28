@@ -4,7 +4,7 @@
 
   // custom content headline
   font-family: $font-title-01;
-  line-height: 1;
+  line-height: .9;
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
   &--xl     { font-size: $s6; }
@@ -79,7 +79,7 @@
   // custom banner headline
   font-family: $font-title-01;
   font-size: $s5;
-  line-height: .9;
+  line-height: .95;
   text-transform: uppercase;
   @include bp($md){ font-size: $s7; }
   @include bp($xl){ font-size: $s10; }

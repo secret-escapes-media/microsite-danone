@@ -2,24 +2,34 @@
 layout: default
 ---
 
-<div class="bg-img bg--about" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');">
+<div class="bg--img bg--cream" style="background-image: url({{site.img}}/content/{{page.id}}/bg-fruit.jpg);">
   <div class="site-header__offset"></div>
   <div class="site-nav__offset"></div>
 
   <div class="vpad--about">
-    <div class="width width--lg text--center text--xxl text--normal text--white">
+    <div class="width width--lg text--center text--xxl text--normal">
     <div class="width width--lf-logo">
       <a href="{{site.client.link}}">
-        <img src="{{site.img}}/logo/partner.svg" alt="{{site.client.name}} Logo">
+        <img src="{{site.img}}/logo/partner-black.svg" alt="{{site.client.name}} Logo">
       </a>
     </div>
     <div class="space--md"></div>
+    <h2 class="title title--md">Discover the world of Light & Free.</h2>
+    <div class="space--sm"></div>
     <p>{{page.intro}}</p>
     <div class="space--md"></div>
-    <a href="{{site.client.link}}" class="btn btn--orange">Discover More</a>
+    <a href="{{site.client.link}}" class="btn btn--blue">Discover More</a>
   </div>
+  <div class="bg--gradient-white">
+    <div class="space--xxl"></div>
+    <div class="space--xxxxl"></div>
   </div>
+</div>
 
+</div>
+
+<div class="content-spacing section-spacing">
+  {{content}}
 </div>
 
 <div class="content-spacing section-spacing">
