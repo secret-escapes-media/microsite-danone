@@ -18,6 +18,10 @@
     width: 100%;
     @include bp($bp) { width: 50%; }
   }
+  @include bp($bp) {
+    &--66-33 &__text { width: 33.33% }
+    &--66-33 &__img  { width: 66.66% }
+  }
   &__text {
     max-width: $lg;
     margin-left: auto;
