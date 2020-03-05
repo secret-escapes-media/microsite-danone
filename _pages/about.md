@@ -9,7 +9,7 @@ nav-order: 3
 banner:
   title: About <br>Light & Free
 
-intro: Delicious Greek-style yoghurt with eight scrumptious flavours to choose from. Find the flavour for you, each inspired by around-the-world adventures. 0% fat 0% added sugar 100% delicious.
+intro: Delicious Greek-style yoghurt with eight scrumptious flavours to choose from. Find the flavour for you, each inspired by around-the-world adventures. <br>0% fat 0% added sugar 100% delicious.
 
 flavours:
 

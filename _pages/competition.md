@@ -50,5 +50,5 @@ prizes:
   - id: raspberry
     title: Take off to scout <br>the coast
     description:
-      - Piercing mountain tops, volcanic surprises and northern cool make for an expedition of epic proportions.
+      - Adventure across spellbinding landscapes, where lights dance across the sky and bells ring and echo through the night...
 ---

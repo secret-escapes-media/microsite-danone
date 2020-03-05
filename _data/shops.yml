@@ -4,16 +4,12 @@
 
 - id: sainsburys
   name: Sainsbury's
-  link: https://www.sainsburys.co.uk/webapp/wcs/stores/servlet/SearchDisplayView?catalogId=10241&storeId=10151&langId=44&krypto=rIX80ahMBVu9MEzxD2hBXmwpngROyQ3uPnhrMOxKOLJdWymFE8W2S8310Ya7grnjB%2F2JMQWJzGxD%2Bw5UJZF6crw3zrIUDDs8t6%2FeCX5H9BeEC7nlgkYfAKbs0F4gi0NKn4ecDEvOK05G6meKUvp2XRiRW3maNpT05KLjsPF6O67o8JgNyOiiibsCo21rZuj5ZaRLW%2FibImOHFPJs5b9XEg%3D%3D#langId=44&storeId=10151&catalogId=10241&categoryId=&parent_category_rn=&top_category=&pageSize=60&orderBy=RELEVANCE&searchTerm=danone%20light%20%26%20free&beginIndex=0&hideFilters=true&categoryFacetId1=
+  link: https://www.sainsburys.co.uk/shop/gb/groceries/dairy-eggs-and-chilled/danone-yogurt?type=lightandfree&facet=4294962550#langId=44&storeId=10151&catalogId=10241&categoryId=428935&parent_category_rn=428866&top_category=428866&pageSize=60&orderBy=FAVOURITES_ONLY%7CSEQUENCING%7CTOP_SELLERS&searchTerm=&beginIndex=0&hideFilters=true&facet=4294962550
 
 - id: asda
   name: Asda
-  link: https://groceries.asda.com/product/greek-style/light-free-fat-free-greek-style-strawberry-yogurts/910002325420
+  link: https://groceries.asda.com/search/light%20%26%20Free?facets=Brand%3A4294938003%3ALight+%26+Free%3A%3AShelves%3A4294938003%2B111750%3AGreek+Style
 
 - id: morrisons
   name: Morrisons
-  link: https://groceries.morrisons.com/products/light-free-strawberry-yogurt-325137011
-
-- id: coop
-  name: Co-op
-  link: https://www.coop.co.uk/
+  link: https://groceries.morrisons.com/search?entry=light%20and%20free%20yoghurts&filters=light-free-166118

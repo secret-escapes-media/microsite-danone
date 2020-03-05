@@ -147,6 +147,9 @@
 }
 
 .bg {
+  &--about {
+    background-color: $lf-blueberry-light;
+  }
   &--cream {
     background-color: $lf-cream;
     // background: linear-gradient(45deg, rgba(255,246,217,1) 0%, rgba(255,251,238,1) 100%);
@@ -199,51 +202,36 @@
 .shops {
   padding-top: $s0;
   .shop {
+    $img-padding: $s-2 $s-1;
     display: inline-block;
-    padding: $s0 $s3;
-    margin: $s-4 $s-6;
-    font-size: $s1;
-    font-weight: 600;
-    background-color: $grey-lightest;
-    border-radius: 999rem;
+    max-width: 140px;
+    vertical-align: middle;
+    padding: $img-padding;
     @include transition;
-    &:hover { color: $white }
-    &--sainsburys {
-      color: #f06c00;
-      background-color: #feede0;
-      &:hover { background-color: #f06c00; }
-    }
-    &--tesco {
-      color: #00539f;
-      background-color: #e0eaf3;
-      &:hover { background-color: #00539f; }
-    }
-    &--asda {
-      color: #68a51c;
-      background-color: #edf4e3;
-      &:hover { background-color: #68a51c; }
-    }
-    &--morrisons {
-      color: #064e37;
-      background-color: #e0e9e6;
-      &:hover { background-color: #064e37; }
-    }
-    &--coop {
-      color: #00b1e7;
-      background-color: #e6f7fd;
-      &:hover { background-color: #00b1e7; }
-    }
-    &--marks-spencer {
-      color: $black;
-      background-color: #e6e6e6;
-      &:hover { background-color: $black; }
-    }
-    &--waitrose {
-      color: #5c8018;
-      background-color: #eff2e8;
-      &:hover { background-color: #5c8018; }
+    position: relative;
+    &--sainsburys { max-width: 180px; }
+    &--tesco      { max-width: 140px; }
+    &--asda       { max-width: 130px; }
+    &--morrisons  { max-width: 130px; }
+    &__color {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      z-index: $z-content;
+      padding: $img-padding;
+      opacity: 0;
+      background-color: $white;
+      @include transition;
     }
   }
+}
+
+.shop:hover,
+.shop:active,
+.shop:focus{
+  .shop__color { opacity: 1; }
 }
 
 
